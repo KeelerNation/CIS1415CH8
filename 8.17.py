@@ -65,6 +65,8 @@ stats = {}
 while count <= 5:
     stat1 = int(input('Enter player %d\'s jersey number:\n' % count))
     stat2 = int(input('Enter player %d\'s rating:\n' % count))
+    while stat2 > 9:
+        stat2 = int(input('Enter player %d\'s rating:\n' % count))
     print('')
     stats.update({stat1:stat2})
 
